@@ -2,11 +2,21 @@
     box-sizing: border-box
 }
 
-header {
+#title {
 
-    font-size: 24px;
+    margin-top: 3%;
+    font-size: 40px;
     text-align: center;
 }
+
+header {
+
+    margin-top: 3.5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
 
 #info {
 
@@ -69,7 +79,11 @@ header {
 }
 
 
+main {
 
+    margin-top: 7%;
+    margin-left: 34%;
+}
 
 /* Add padding to containers */
 .container {
@@ -87,7 +101,7 @@ input[type=text] {
 }
 
 input[type=text]:focus:focus {
-    background-color: #ddd;
+    background-color: rgb(180, 180, 180);
     outline: none;
 }
 
