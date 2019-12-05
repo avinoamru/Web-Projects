@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box
+}
+
+header {
+
+    font-size: 24px;
+    text-align: center;
+}
+
+#info {
+
+    margin-right: 3.5%;
+    background-color: brown;
+    color: white;
+    padding: 10px 35px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+}
+
+#info:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+}
+
+#gallery {
+
+    margin-right: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+}
+
+#gallery:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+}
+
+#lifestyle {
+
+    margin-left: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+
+
+}
+
+#lifestyle:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+
+}
+
+
+
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* half-screen width input fields */
+input[type=text] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.submitbtn {
+    background-color: brown;
+    text-align: center;
+    margin-left: 25%;
+    color: white;
+    padding: 16px 20px;
+
+    border: none;
+    cursor: pointer;
+    width: 50%;
+
+}
+
+.submitbtn:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+}

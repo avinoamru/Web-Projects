@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="Form-Page.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 id="title" style="text-align: center">Fake News</h1>
+    </header>
+
+
+
+    <form action="Form-page.html" method="GET" target="_blank">
+
+        <div class="container">
+
+            <h3 style="text-align: left">To register to our forum please fill in this form </h3>
+            <hr>
+
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" placeholder="Enter Email" name="email" required><Br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input id="password" type="password" placeholder="Enter Password" name="psw" pattern=".{8,12}" required
+                title="8 to 12 characters"><br>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label><br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+
+            <label for="birth-date"><b>Date of birth: </b></label>
+            <input id="date-input" type="date" required> <br><br>
+
+            <label for="gender"><b>Gender:</b></label>
+            <input type="radio" required>Male <input type="radio" required>Female<input type="radio">Other
+            <hr>
+            <p>By checking this box you agree to recieve weekly stories to your email <input type="checkbox"></p>
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+            <button type="submit" class="registerbtn" onclick="reg_click()">Register</button>
+
+
+        </div>
+
+
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+
+    <script src="Form-Page.js"></script>
+</body>
+
+</html>

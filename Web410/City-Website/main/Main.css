@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#h1-title {
+    margin-top: 3%;
+    font-size: 46px;
+    text-align: center;
+
+
+}
+
+header {
+
+    font-size: 24px;
+    text-align: center;
+}
+
+#gallery {
+
+    margin-right: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+}
+
+#gallery:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+}
+
+#lifestyle {
+
+    margin-left: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+
+
+}
+
+#lifestyle:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+
+}
+
+main {
+
+    word-wrap: break-word;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+footer {
+
+    text-align: center;
+    margin-top: 100px;
+
+
+}
