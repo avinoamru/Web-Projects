@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#h1-title {
+    margin-top: 3%;
+    font-size: 40px;
+    text-align: center;
+
+
+}
+
+header {
+
+    margin-top: 3.5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#gallery {
+
+    margin-right: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+}
+
+#gallery:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+}
+
+#lifestyle {
+
+    margin-left: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+
+
+}
+
+#lifestyle:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+
+}
+
+#map {
+
+    margin-left: 2%;
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    font-style: italic;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    border-radius: 7px;
+
+
+}
+
+#map:hover {
+    background-color: rgb(139, 107, 107);
+    color: black;
+
+}
+
+main {
+
+    word-wrap: break-word;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.603)), url("city-map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+
+
+}

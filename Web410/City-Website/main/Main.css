@@ -33,8 +33,8 @@ header {
 #info {
 
     margin-right: 2%;
-    background-color: brown;
-    color: white;
+    background-color: rgb(139, 107, 107);
+    color: black;
     padding: 10px 20px;
     font-style: italic;
     cursor: pointer;
@@ -115,6 +115,7 @@ header {
 
 }
 
+
 /* changing the color of the element when the user hovers the mouse on top of it */
 #culture:hover {
 
@@ -147,30 +148,39 @@ header {
 
 /* setting a background image with radient to change the opacity of the background without changing the text opacity */
 body {
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.603)), url("/Web410/City-Website/main/body-bg.jpg");
+    /* background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.603)),  */
+    background-image: url("/Web410/City-Website/main/body-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 
 
+
 /* styling and positioning the main ccontent i.e. text */
 main {
 
-    background-color: rgba(255, 255, 255, 0.12);
+    overflow: auto;
+    border: solid black 1px;
+    height: 600px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
     word-wrap: break-word;
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 10%;
     color: rgb(0, 0, 0);
-    text-shadow: black 0px 0px 5px;
     font-weight: bold;
-    font-style: oblique;
+    font-style: italic;
+    padding: 10px;
 
-    padding: 50px;
 
+}
 
+/* hiding scrollbar (works on chrome only) */
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* do nothing we don't have a footer yet.. */
