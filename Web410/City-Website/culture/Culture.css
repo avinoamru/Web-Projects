@@ -29,12 +29,55 @@ header {
     text-align: center;
 }
 
+main {
+
+    overflow: auto;
+    border: solid black 1px;
+    height: 400px;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+    word-wrap: break-word;
+    font-size: 24px;
+    margin-top: 5%;
+    margin-left: 35%;
+    margin-right: 10%;
+    color: rgb(0, 0, 0);
+
+
+}
+
+/* hiding scrollbar (works on chrome only) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+
+    background-image: url("/Web410/City-Website/main/body-bg.jpg   ");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img {
+    /* to round the image */
+
+    position: relative;
+    float: center;
+    width: 120px;
+    height: 120px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box
+}
+
 /* styling and positioning the info element of the header (navigation bar) */
 #info {
 
     margin-right: 2%;
-    background-color: rgb(139, 107, 107);
-    color: black;
+    background-color: brown;
+    color: white;
     padding: 10px 20px;
     font-style: italic;
     cursor: pointer;
@@ -103,8 +146,8 @@ header {
 #culture {
 
     margin-right: 2%;
-    background-color: brown;
-    color: white;
+    background-color: rgb(139, 107, 107);
+    color: black;
     padding: 10px 20px;
     font-style: italic;
     cursor: pointer;
@@ -146,50 +189,29 @@ header {
     color: black;
 }
 
-/* setting a background image with radient to change the opacity of the background without changing the text opacity */
-body {
-    /* background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.603)),  */
-    background-image: url("/Web410/City-Website/main/body-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+.column1 {
 
 
-
-
-/* styling and positioning the main ccontent i.e. text */
-main {
-
-    overflow: auto;
-    border: solid black 1px;
-    height: 600px;
-    width: 50%;
-    background-color: rgba(255, 255, 255, 0.75);
-    word-wrap: break-word;
-    font-size: 40px;
     margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 10%;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    font-style: italic;
-    padding: 10px;
-
-
+    text-align: center;
+    margin-bottom: 3%;
+    /* width: 70%; */
+    /* height: 70%; */
+    box-sizing: border-box;
 }
 
-/* hiding scrollbar (works on chrome only) */
-::-webkit-scrollbar {
-    display: none;
+
+.column2 {
+
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
-/* do nothing we don't have a footer yet.. */
 footer {
-
     font-size: 30px;
     text-align: center;
     margin-top: 5%;
-
-
 }

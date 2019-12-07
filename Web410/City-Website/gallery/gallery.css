@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  /* background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("/City_Promotion_Assignment/gallery/images/body-bg.jpg"); */
+  background-image: url("/Web410/City-Website/main/body-bg.jpg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+#h1-title {
+  margin-top: 3%;
+  font-size: 40px;
+  text-align: center;
+  /* background-color: white; */
+}
+
+/* styling the sub-title of the page */
+#h2-title {
+
+  margin-top: 3%;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+header {
+
+  margin-top: 3.5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+#gallery:hover {
+  background-color: rgb(139, 107, 107);
+  color: black;
+}
+
+/* styling and positioning the info element of the header (navigation bar) */
+#info {
+  margin-right: 2%;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 7px;
+}
+
+/* changing the color of the element when the user hovers the mouse on top of it */
+#info:hover {
+
+  background-color: rgb(139, 107, 107);
+  color: black;
+}
+
+
+
+/* styling and positioning the gallery element of the header (navigation bar) */
+#gallery {
+  margin-right: 2%;
+  background-color: rgb(139, 107, 107);
+  color: black;
+  padding: 10px 20px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 7px;
+
+}
+
+/* changing the color of the element when the user hovers the mouse on top of it */
+#gallery:hover {
+  background-color: rgb(139, 107, 107);
+  color: black;
+}
+
+/* styling and positioning the lifestyle element of the header (navigation bar) */
+#lifestyle {
+
+  margin-right: 2%;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 7px;
+
+
+}
+
+/* changing the color of the element when the user hovers the mouse on top of it */
+#lifestyle:hover {
+  background-color: rgb(139, 107, 107);
+  color: black;
+
+}
+
+/* styling and positioning the culture element of the header (navigation bar) */
+#culture {
+
+  margin-right: 2%;
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 7px;
+
+}
+
+
+/* changing the color of the element when the user hovers the mouse on top of it */
+#culture:hover {
+
+  background-color: rgb(139, 107, 107);
+  color: black;
+}
+
+/* styling and positioning the contact element of the header (navigation bar) */
+#contact {
+
+
+  background-color: brown;
+  color: white;
+  padding: 10px 20px;
+  font-style: italic;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+  border-radius: 7px;
+
+}
+
+/* changing the color of the element when the user hovers the mouse on top of it */
+#contact:hover {
+
+  background-color: rgb(139, 107, 107);
+  color: black;
+}
+
+
+main {
+
+  overflow: auto;
+  /* border: solid black 1px; */
+  height: 600px;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  word-wrap: break-word;
+  font-size: 30px;
+  margin-top: 5%;
+  margin-left: 25%;
+  margin-right: 10%;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+  padding: 10px;
+
+
+}
+
+div.containerGallery {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  float: left;
+  width: 250px;
+  height: 400px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 45%;
+}
+
+div.desc {
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+div.clear {
+  clear: both;
+}
+
+
+footer {
+
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5%;
+
+
+}

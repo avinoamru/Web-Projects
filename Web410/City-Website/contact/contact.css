@@ -150,15 +150,18 @@ body {
     background-image: url('/Web410/City-Website/main/body-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 
-
-
+/* hides the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 main {
 
+    font-size: 30px;
     margin-top: 7%;
     margin-left: 34%;
 }
@@ -203,6 +206,7 @@ input[type=text]:focus:focus {
     text-align: center;
     margin-right: 25%;
     margin-top: 2%;
+    margin-bottom: 2%;
     color: white;
     padding: 16px 20px;
     font-size: 30px;
@@ -212,6 +216,7 @@ input[type=text]:focus:focus {
 
 }
 
+/* changing the color of the element when the user hovers the mouse on top of it */
 #submit-btn:hover {
     background-color: rgb(139, 107, 107);
     color: black;

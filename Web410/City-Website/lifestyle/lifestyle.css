@@ -145,21 +145,6 @@ header {
     color: black;
 }
 
-/* main {
-
-
-    background-color: brown;
-    color: white;
-    padding: 10px 20px;
-    font-style: italic;
-    text-decoration: none;
-    text-align: center;
-    display: inline;
-    border-radius: 7px;
-
-
-} */
-
 main {
 
 
@@ -177,44 +162,68 @@ main {
 
 }
 
+#Centre-dubai {
+
+    display: inline-block;
+    text-align: top;
+
+}
+
+#shop-dubai {
+
+    display: inline-block;
+    text-align: top;
+
+}
+
+#beach-club-dubai {
 
 
-#map {
+    display: inline-block;
+    text-align: top;
 
-    margin-left: 2%;
-    background-color: brown;
-    color: white;
-    padding: 10px 20px;
-    font-style: italic;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: inline;
-    border-radius: 7px;
+}
+
+#busy-dubai {
+
+    display: inline-block;
 
 
 }
 
-#map:hover {
-    background-color: rgb(139, 107, 107);
-    color: black;
 
-}
+
+
 
 main {
 
+    overflow: auto;
+    border: solid black 1px;
+    height: 600px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.75);
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 5%;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 25%;
+    margin-right: 10%;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
 
 }
 
 body {
-    background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.603)), url("body-bg.jpg");
+    background-image: url("body-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 footer {
