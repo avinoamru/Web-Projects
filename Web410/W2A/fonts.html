@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Fonts</title>
+    <link rel="stylesheet" type="text/css" href="W2A.css">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <p>tAschool</p>
+        <div class="nav">
+            <a href="main.html">Home</a>
+            <a href="padding.html">Padding</a>
+            <a href="border.html">Border</a>
+            <a href="margin.html">Margin</a>
+            <a id="active" href="#fonts">Fonts</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <h1>CSS Fonts</h1>
+    <div id="main">
+        <p id="p1">Font is the style, size and weight of letters, numbers and pretty much every writable symbol.
+            <br><br>
+            Fonts are used to create a certain mood or a feeling, attract the readers and most importantly make the text
+            easy to read.
+        </p>
+
+        <p>In CSS we have a bunch of ways we can style and manipulate the font of our text. In this page We will
+            cover
+            some of the basics.</p>
+        <br>
+        <h2>CSS font-size Property</h2>
+        <p>Used to set the size of the font.<br><br>
+            Let's say we want <span id="this-size">this</span> word to be bigger than the rest.<br>
+        </p>
+
+        <p>We will define our wanted text with an id/class and set it's size to a bigger one than the others, in this
+            case we used 30px.<Br><br>
+            It's looks like this:<Br>
+            <textarea id="textarea" readonly rows="6" cols="84">
+HTML: Let's say we want <span id="this-size">this</span> word to be bigger than the rest.
+
+CSS: #this-size {
+    font-size: 30px; 
+}</textarea>
+        </p>
+
+
+        <h2>CSS font-family Property</h2>
+        <p>There are two types of font family names:
+            <ul>
+                <li>family-name - The name of a font-family, like "times", "courier", "arial", etc.</li><Br>
+                <li>generic-family - The name of a generic-family, like "serif", "sans-serif", "cursive", "fantasy",
+                    "monospace".</li>
+            </ul>
+        </p>
+        <p>Let's say we want <span id="this-family">this</span> word to be in a Times New Roman font.</p>
+
+        <p>
+            We will define our wanted text with an id/class and set it's font family to Times New Roman.<br><br>
+            It's looks like this: <br>
+            <textarea id="textarea" readonly rows="6" cols="84">
+HTML: Let's say we want <span id="this-family">this</span> word to be in a Times New Roman font.
+
+CSS: #this-family {
+    font-family: 'Times New Roman';
+}</textarea>
+        </p>
+
+        <h2>CSS font-style Property</h2>
+        <p>Used to change the style of the font, this property accepts one of three possible values: normal, italic, and
+            oblique.</p>
+        <p>Let's say we want to set <span id="this-style">this</span> word to italic style. </p>
+        <p> We will define our wanted text with an id/class and set it's font style to italic.<br><br>
+            It's looks like this:<br>
+            <textarea id="textarea" readonly rows="6" cols="84">
+HTML: Let's say we want to set <span id="this-style">this</span> word to italic style.
+
+CSS: #this-style {
+    font-style: italic;
+}</textarea>
+
+        </p>
+
+        <h2>CSS font-weight Property</h2>
+        <p>The font-weight property sets how thick or thin characters in text should be displayed.</p>
+        <p>Let's say we want <span id="this-weight">this</span> word to be bold.</p>
+        <p>We will define our wanted text with an id/class and set it's font weight to bold.<br><br>
+            It's looks like this:<Br>
+            <textarea id="textarea" readonly rows="5" cols="84">
+HTML: Let's say we want <span id="this-weight">this</span> word to be bold.
+
+CSS: #this-weight {
+    font-weight: bold;
+}</textarea>
+
+        </p>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class=“footer-left”>
+            <h3>@ tAschool </h3>
+        </div>
+        <div class=“footer-right”>
+            <ol>
+                <li>Ayaka</li>
+                <li>Bianca</li>
+                <li>Avinoam</li>
+                <li>Elen</li>
+                <li>Yuki</li>
+            </ol>
+        </div>
+    </footer>
+</body>
+
+</html>
