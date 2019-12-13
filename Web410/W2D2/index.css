@@ -1,0 +1,173 @@
+header {
+
+    margin-top: 2%;
+    border: solid black 0.2em;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 9em;
+
+}
+
+#h1-title {
+
+    font-size: 2em;
+    position: absolute;
+    left: 49.5%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%);
+    top: 10em;
+}
+
+.navBar {
+
+    
+    top: 12%;
+    position: absolute;
+    left: 50%; 
+
+    transform: translate(-50%, -50%);
+}
+
+.buttons {
+
+    border-radius: 0.5em;
+    padding: 2em;
+    background-color: rgb(71, 71, 71);
+    margin: 1em;
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+
+}
+.buttons:hover{
+
+    background-color: grey;
+}
+
+#the-team {
+
+    background-color: rgb(255, 137, 68);
+
+}
+
+#the-team:hover {
+
+    background-color: rgb(255, 167, 116);
+
+}
+
+
+#container {
+
+    display: table;
+    padding: 1em;
+    border: solid 0.3em black;
+    position: absolute;
+    top: 40%;
+    height: 40%;
+    width: 70%;
+    right: 15%;
+    left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.h3-name {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.members {
+
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* the display table-cell kinda messed up my paddings between the members, that's why they are "connected.
+   I tried to fix it but I couldn't make it in time.. */
+
+#manager-ceo-producer-shareHolder {
+
+    
+    display: table-cell;
+    padding-right: 15px;
+    width: 350px;
+    height: 390px;
+    border: solid black 0.1em ;
+}
+
+#member1 {
+    
+    
+
+    
+    width: 350px;
+    height: 390px;
+    border: solid black 0.1em;
+    margin-left: 370px;
+    display: table-cell;
+}
+
+#member2 {
+    display: table-cell;
+    padding: 5px;
+    margin: 10px;
+    width: 350px;
+    height: 390px;
+    border: solid black 0.1em ;
+    
+
+}
+
+#member3 {
+    display: table-cell;
+    padding: 5px;
+    width: 350px;
+    height: 390px;
+    border: solid black 0.1em ;
+
+}
+
+div img{
+
+    width: 150px;
+    height: 100px;
+    margin-left:29% ;
+    
+}
+
+#lorem {
+    
+    font-style: italic;
+    font-size: 20px;
+    width: 55%;
+    height: 200px;
+    word-break: keep-all;
+    overflow: auto;
+    margin-left: 22.5%;
+    
+    
+}
+
+
+
+#lorem::-webkit-scrollbar{
+    display: none;
+}
+
+#lorem:hover{
+
+   font-size: 28px;
+      
+    
+}
+
+
+.test{
+
+    padding: 15px;
+
+}

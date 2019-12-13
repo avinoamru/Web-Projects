@@ -1,0 +1,160 @@
+header {
+    background-color: #3f8afa;
+    height: 200px;
+    width: 100%;
+    padding-top: 1px;    
+}
+
+.navBar{
+
+    position: fixed;
+    position: sticky;
+    width: 100%;
+    background-color: #3f8afa;
+    top:0;
+    padding: 30px;
+    
+}
+
+
+#h1-title {
+
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fc6b28;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: #fde507ea;
+
+
+}
+
+#h2-title {
+
+    font-size: 24px;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 300;
+    color: #fff5f5fd;
+    padding-bottom: 10px;
+
+
+}
+
+
+.buttons {
+
+    
+    color: rgba(0, 0, 218, 0.815);    
+    text-align: center;
+    padding: 7px 10px;
+    margin-left: 7%;
+    font-size: 24px;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: #c8deffc7;
+    text-transform: capitalize;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 218, 0.815);
+}
+
+#button1 {
+
+margin-left: 15%;
+
+}
+
+.buttons:hover {
+
+    background-color: orange;
+}
+
+main {
+
+    margin-top: 5%;
+    margin-left: 5%;
+    word-wrap: break-word;
+    width: 900px;
+    text-align: left;
+    font-size: 24px;
+
+}
+p img{
+
+        
+    padding-bottom: 20px;
+    padding-top: 10px;
+    height: 400;
+    width: 600;
+    float: left;
+}
+
+p::first-letter{
+   font-size: 40px;
+    
+}
+
+
+.team {
+
+    text-align: center;
+    border: 1px solid black;
+   
+    font-weight: 10;
+    margin-top: 5%;
+    margin-left: 33%;
+    padding: 10px;
+
+}
+#row1{
+    font-size: 40px;
+}
+.row {
+    font-size: 24px;
+    border: 1px solid black;
+    margin: 15px;
+    padding: 5px 5px;
+}
+.col {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 5px 5px;
+}
+
+
+#p1:hover{
+ font-size: 50px;
+ margin-left: 20%;
+ }
+
+#p2:hover{
+font-size: 50px;
+margin-left: 20%;
+}
+
+#p3:hover{
+font-size: 50px;
+margin-left: 20%;
+}
+
+ #p4:hover{
+ font-size: 50px;
+ margin-left: 20%;
+}
+
+ #p5:hover{
+font-size: 50px;
+margin-left: 20%;
+}
+
+#p6:hover{
+font-size: 50px;
+margin-left: 20%;
+}

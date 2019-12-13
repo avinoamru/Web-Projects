@@ -1,0 +1,298 @@
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgb(221, 233, 233), rgb(188, 229, 229), #88BDBC);
+
+
+}
+
+
+#header {
+
+
+    width: 20em;
+    height: 4em;
+    border: #254E58 7px solid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding: 20px;
+}
+
+
+#h1-title {
+
+    margin-top: 0.15em;
+
+    text-align: center;
+    text-shadow: 0px 0px 4px #254E58;
+    color: #254E58;
+    font-size: 250%;
+
+    text-transform: uppercase;
+}
+
+
+#main {
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10em;
+
+    border: solid black 2px;
+
+
+    height: 28em;
+    width: 31.5em;
+
+
+}
+
+
+.boxes {
+
+    height: 7em;
+    border: solid black 2px;
+    width: 7em;
+    cursor: pointer;
+
+
+
+
+}
+
+
+#box1 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: rgb(197, 175, 138);
+    transition: 1s;
+
+}
+
+#box1:hover {
+
+    transform: translateX(50px);
+
+}
+
+
+#box2 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #112D32;
+    transition: 2s;
+}
+
+#box2:hover {
+
+    transform: scale(2);
+
+}
+
+
+
+#box3 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #4F4A41;
+    transition: 2s;
+
+}
+
+#box3:hover {
+
+    transform: rotateX(180deg);
+
+}
+
+
+#box4 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #4F4A41;
+    transition: 2s;
+
+}
+
+#box4:hover {
+
+    transform: rotateZ(180deg);
+
+}
+
+#box5 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: rgb(197, 175, 138);
+    transition: transform 3s ease;
+
+}
+
+#box5:hover {
+
+    transform: skewY(90deg);
+}
+
+
+#box6 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #112D32;
+    transition: 1s;
+
+}
+
+/* since I've already ordered the boxes colors, I changed from a cold color to warm */
+
+#box6:hover {
+
+    background: rgb(139, 2, 2);
+
+}
+
+
+
+#box7 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #112D32;
+
+
+
+}
+
+#box7:hover {
+
+    animation: box7 3s;
+}
+
+@keyframes box7 {
+
+    0% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(700px);
+    }
+
+}
+
+
+#box8 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: #4F4A41;
+
+
+}
+
+#box8:hover {
+    animation: box8 6s;
+}
+
+@keyframes box8 {
+
+    0% {
+
+        background-color: #4F4A41;
+
+
+    }
+
+    10% {
+        background-color: white;
+    }
+
+    25% {
+
+        transform: translateY(-100px) rotateZ(90deg);
+
+        background-color: rgb(172, 130, 96);
+
+    }
+
+    35% {
+        background-color: white;
+        transform: translateX(-100px) translateY(-200px) rotateZ(-90deg)
+    }
+
+    50% {
+
+        background-color: rgb(173, 53, 53);
+        transform: translateX(200px) translateY(-100px) rotateZ(180deg);
+
+
+    }
+
+    60% {
+
+        background-color: white;
+        transform: translateX(-200px) translateY(-100px) rotateZ(-180deg);
+
+    }
+
+    75% {
+        background-color: rgb(149, 172, 96);
+        transform: translateX(200px) translateY(-200px) rotateZ(270deg);
+
+
+    }
+
+    85% {
+        background-color: white;
+        transform: translateX(-200px) translateY(-200px) rotateZ(-270deg);
+
+
+    }
+
+    100% {
+        background-color: rgb(33, 83, 190);
+        transform: translateX(0px) translateY(0px) rotateZ(-360deg);
+
+
+    }
+
+}
+
+
+#box9 {
+
+    float: left;
+    margin: 2% 5% 2% 5%;
+    background-color: rgb(197, 175, 138);
+
+
+
+}
+
+#box9:hover {
+
+    animation: box9 4s;
+
+}
+
+@keyframes box9 {
+
+
+    0% {}
+
+    100% {
+
+        background-color: blue;
+        transform: rotateZ(360deg) scale(3);
+    }
+
+}
