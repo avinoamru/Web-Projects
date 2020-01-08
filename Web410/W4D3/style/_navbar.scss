@@ -1,0 +1,25 @@
+@import './colors';
+$nav-fs:20px;
+$nav-fw:bold;
+$nav-btn-shadow: 0px 0px 5px black;
+
+
+#navbar{
+    text-align: center;
+    margin-top: 2%;
+
+    button{
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: $nav-fs;
+        font-weight: $nav-fw;
+        background-color: $navbar-button-color;
+        box-shadow: $nav-btn-shadow;
+        border-radius: 30px;
+       
+       
+    }
+    
+}
+
+

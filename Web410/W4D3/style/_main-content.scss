@@ -1,0 +1,17 @@
+@import './colors';
+
+#section{
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+}
+
+#section ::first-letter{
+    font-size: 34px;
+    font-weight: bold;
+}

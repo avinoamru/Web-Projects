@@ -1,0 +1,32 @@
+
+
+
+
+  $body-bg-color:rgb(253, 253, 253);
+  $body-alt-bg-color:black;
+
+// Header
+$header-bg-color: rgb(207, 207, 207);
+$header-h1-color:rgb(41, 41, 41);
+
+
+
+// Navbar
+$navbar-button-color:rgb(231, 231, 231);
+
+@mixin gradual-nav-color {
+
+    @for $navbar-button-color from start to end {
+        background: darken($color: rgb(231, 231, 231), $amount: 10%);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
