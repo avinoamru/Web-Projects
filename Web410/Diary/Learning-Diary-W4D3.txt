@@ -1,0 +1,7 @@
+Learning Diary - W4D3
+
+1) I learned that css can be used like a programming language.
+
+2) I found the mixins interesting cause I think the can do a lot of complex actions even though I've found them hard to use.
+
+3) I've found mixins, loops and basically everithing in scss difficult except variables, plus I have jet lag and I was awake all night long so focusing was not easy.

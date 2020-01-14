@@ -3,11 +3,23 @@ $nav-fs:20px;
 $nav-fw:bold;
 $nav-btn-shadow: 0px 0px 5px black;
 
+@mixin flexCenter($direction) {
+
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    flex-direction: $direction;
+    
+    }
 
 #navbar{
     text-align: center;
     margin-top: 2%;
 
+    @include flexCenter(row);
     button{
         margin-left: 1%;
         margin-right: 1%;
@@ -21,5 +33,4 @@ $nav-btn-shadow: 0px 0px 5px black;
     }
     
 }
-
 

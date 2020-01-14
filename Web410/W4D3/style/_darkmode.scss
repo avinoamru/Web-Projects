@@ -1,0 +1,22 @@
+@import './colors';
+
+// Tried to make a darkmode and failed..
+
+#darkmode{
+    font-size: 20px;
+}
+
+#darkmode:hover{
+
+    @include set-color(black);
+
+}
+
+@function set-color($color) {
+    @if ($body-bg-color($color) > 40) {
+      @return #000;
+    }
+    @else {
+      @return #FFF;
+    }
+}

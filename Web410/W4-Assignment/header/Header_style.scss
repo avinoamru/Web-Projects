@@ -1,0 +1,219 @@
+@import '../css/colors';
+
+body{
+margin: 0;
+}
+nav h1{
+margin:0px;
+font-family: sans-serif;
+font-size: 100%;
+}
+nav h3{
+margin:0px;
+font-family: sans-serif;
+font-size: 100%;
+}
+nav ul {
+margin-top: 0;
+display: grid;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+grid-gap: 1px;
+width: 100%;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: $ul-bg;
+justify-content: center;
+align-items: center;
+align-content: center;
+grid-template-areas: 
+    'A B C H H H H D E F '
+    ;
+}
+nav #logo{
+grid-area: A;
+}
+nav #browse{
+grid-area: B;
+}
+nav #more{
+grid-area: C;
+}
+nav #Join{
+grid-area: D;
+}
+nav #Login{
+grid-area: E;
+}
+nav #Submit{
+grid-area: F;
+}
+nav #searchbar{
+    grid-area: H;
+}
+
+nav a{
+width: 100%;
+}
+
+nav ul img {
+margin-left: 20%;
+width: 60%;
+filter: invert(100%) grayscale(100%);
+}
+
+nav li {
+float: left;
+align-content: center;
+height: 100%;
+}
+
+nav li a,nav .dropbtn {
+display: inline-block;
+color: $li-a-dropbtn;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+nav li a:hover,nav .dropdown:hover .dropbtn {
+background-color: $li-a-hover-bg;
+}
+
+nav li.dropdown {
+display: inline-block;
+}
+
+nav .dropdown-content {
+display: none;
+position: absolute;
+color: $dropdown-content-bg;
+min-width: 100px;
+width: 11%;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+nav .dropdown-content a {
+color: $dropdown-content-a;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+nav .dropdown-content a:hover {
+color: $dropdown-content-a-hover;
+background-color:$dropdown-content-a-hover-bg;
+width: 85%;
+}
+
+nav .dropdown:hover .dropdown-content {
+display: block;
+}
+#DropIcon{
+display: none;
+grid-area: G;
+}
+/*search bar*/
+.container {
+margin: auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 46px;
+
+input {
+font-family: 'Inconsolata', monospace;
+margin: auto;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+width: 50px;
+height: 50px;
+outline: none;
+border: none;
+background: $search-input-bg;
+color: $search-input;
+padding: 0 80px 0 20px;
+border-radius: 30px;
+transition: all 1s;
+opacity: 0;
+z-index: 5;
+font-weight: bolder;
+letter-spacing: 0.1em;
+&:hover {
+cursor: pointer;
+}
+&:focus {
+width: 90%;
+opacity: 1;
+cursor: text;
+}
+&:focus ~ .search {
+right: -250px;
+background: #151515;
+z-index: 6;
+&::before {
+top: 0;
+left: 0;
+width: 25px;
+}
+&::after {
+top: 0;
+left: 0;
+width: 25px;
+height: 2px;
+border: none;
+background: white;
+border-radius: 0%;
+transform: rotate(-45deg);
+}
+}
+&::placeholder {
+color: white;
+opacity: 0.5;
+font-weight: bolder;
+}
+}
+}
+
+
+@media (max-width:400px){
+
+nav ul{
+height: 60px;
+grid-template-areas: 
+'G . H H H . . A A A '
+;
+}
+#browse , #More , #Join, #Login, #Submit{ 
+display: none;
+}
+#DropIcon {
+display: inline-block;
+}
+#DropIcon .dropdown-content{
+    width: 400px;
+    background-color: $ul-bg;
+}
+#DropIcon .dropdown-content a{
+    color: $dropicon-font-color;
+}
+#DropIcon .dropdown-content a:hover {
+    color: $dropicon-font-color;
+    background-color:$dropicon-font-color-bg;
+    width: 100%;
+}
+#DropIcon img {
+    width: 100%;
+}
+#DropIcon a{
+    margin: 0;
+    width: 77%;
+}
+}

@@ -1,20 +1,14 @@
-
-@import './colors';
-@import './navbar';
 @import './header';
-@import './main-content';
-@import './footer';
-@import './darkmode';
 
-body{
-  background-color:  black;
-}
-// Grid view responsiveness
 
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
   
+  body {
+    background-color: rgb(31, 31, 31);
+  }
+
   .row::after {
     content: "";
     clear: both;
@@ -23,7 +17,7 @@ body{
   
   [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 10px;
   }
   
   .col-1 {width: 8.33%;}
@@ -38,11 +32,7 @@ body{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  
 
 
-  button{
-    cursor: pointer;
-  
-  }
-  
-  
+
