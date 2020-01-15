@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <h1>Welcome to my page</h1>
+    <h3>Tell me what you think about it!</h3>
+
+    <a href="http://localhost:3000/about">about</a>
+
+
+    <form action="/send-note" method="POST" id="register-form">
+
+      <p> Username: <input type="text" id="usernameInput" required name="Username" placeholder="Type here" ></p>  
+      <p> Password: <input type="password" required name="Password" placeholder="Type here" ></p>  
+      <button type="submit" >Register</button>
+
+
+    </form>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
