@@ -52,6 +52,9 @@
 
         
     }
+        #active{
+            text-decoration: underline black;
+        }
         a:hover{
             text-decoration: underline !important;
         }
@@ -62,3 +65,34 @@
         }
 
   }
+
+
+
+ 
+  main #myTable {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8%;
+  }
+
+  main #myTable tr td {
+      text-align: center;
+      border: black 3px solid;
+      padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+  }
+
+  
+
+  main #myTable tr th{
+    color: rgb(45, 45, 175);
+    font-size: 24px; 
+    padding: 5px;
+    border: black 3px solid;
+    
+      
+  }
+
+ 
