@@ -3,9 +3,10 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const fs = require('fs');
-// const ejs = require('ejs');
+//  const ejs = require('ejs');
 
 app.set('view engine',  'ejs');
+
 
 
 app.use(bodyParser.urlencoded({extended: false}));
@@ -51,15 +52,14 @@ app.post('/send-note', (req, res, next) => {
 
     } );
 
-    app.get('/read', (req, res, next)=> {
-
-        fs.readFile(path.join(__dirname, '/data/data.json'), (err,data) => {
-
-            console.log(err);
-            res.render('read',  {usernames: JSON.parse(data)});
-
-        });
-
+    app.get('/read', (req, res, next) => {
+        fs.readFile(
+            path.join(__dirname, '/data/data.json'),
+            (err, data) => {
+    
+                res.render('read', {usernames: JSON.parse(data)})
+            }
+        )
     });
 
 //    }
@@ -67,8 +67,6 @@ app.post('/send-note', (req, res, next) => {
    
 
    
-
-    
 
 })
 
@@ -83,21 +81,6 @@ app.get('/about', (req, res, next) => {
 
 
 app.use(express.static('./public'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
