@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Notebook - Write</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Notebook - Write</h1>
+    </header>
+
+    <nav>
+
+        <a href="/">Home</a>
+    
+        <a href="/read">Write Notes</a>
+
+    </nav>
+
+    <main>
+
+        <h3>Leave us a note</h3>
+
+        <form action="/write" method="POST">
+            <input type="text" placeholder="Author" name="author"><br><br>
+            <input type="text" placeholder="Title" name="title"><br><br>
+            <input type="text" placeholder="Content" required name="content"><br><br>
+            <button type="submit">Send</button>
+        </form>
+
+    </main>
+
+
+
+
+</body>
+</html>

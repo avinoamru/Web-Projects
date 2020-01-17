@@ -1,21 +1,22 @@
 const express = require('express'),
-      router = express.Router;
-
-app.get('/', (req,res,next) => {
-
-    console.log("Your'e in the Home page");
-    res.write("<h1>Welcome</h1>")
-    res.end();
-});
+      router = express.Router(),
+      path = require('path'),
+      controller = require('../controllers/controller'),
+      homePage = controller.getHomePage ,
+      writePage = controller.getWritePage ,
+      readPage = controller.getReadPage;
 
 
-app.get('/register', (req,res,next) =>{
+router.get('/', homePage);
 
-    console.log("your'e in the register page");
-    res.write("<h1>Register page</h1>");
-    res.end();
-});
 
+router.get('/write', writePage);
+router.post('/write',  controller.postWrite);
+
+router.get('/read', readPage);
+
+
+module.exports = router;
 
 
 
