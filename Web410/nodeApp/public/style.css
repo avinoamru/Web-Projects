@@ -22,4 +22,10 @@ nav a {
 main {
   text-align: center;
 }
+
+main form button {
+  background-color: red;
+  font-size: 18px;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

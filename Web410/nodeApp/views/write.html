@@ -25,9 +25,9 @@
         <h3>Leave us a note</h3>
 
         <form action="/write" method="POST">
-            <input type="text" placeholder="Author" name="author"><br><br>
-            <input type="text" placeholder="Title" name="title"><br><br>
-            <input type="text" placeholder="Content" required name="content"><br><br>
+            <input type="text" placeholder="Author" required name="author"><br><br>
+            <input type="text" placeholder="Title" required name="title"><br><br>
+            <textarea name="content"  placeholder="content" id="textarea-c" required  cols="30" rows="10"></textarea><br><br>
             <button type="submit">Send</button>
         </form>
 
