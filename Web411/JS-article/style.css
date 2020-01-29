@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  header h1 {
+    font-size: 2.4em !important;
+  }
+  main article {
+    width: 100% !important;
+    word-wrap: normal;
+    word-break: normal;
+  }
+  main ul {
+    position: relative;
+    left: 10vw !important;
+    bottom: 10px;
+  }
+}
+
+nav {
+  height: 100px;
+  background-color: #dddddd;
+}
+
+nav .nav-items {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav .nav-items .nav-item {
+  margin-left: 1%;
+  margin-right: 1%;
+  font-size: 1.5em;
+}
+
+nav .nav-items a {
+  text-decoration: none;
+  color: black;
+  text-shadow: 1px 1px 2px gray, 2px 2px 10px whitesmoke;
+}
+
+header {
+  margin-top: 5%;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+}
+
+main {
+  margin-top: 10%;
+}
+
+main article {
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+main article P {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+main article .highlight {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main a {
+  color: blue;
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline !important;
+}
+
+main section {
+  position: relative;
+  left: 7vw;
+  bottom: 10px;
+  font-size: 22px;
+  line-height: 1.5;
+  word-wrap: normal;
+  word-break: normal;
+  text-align: left;
+}
+
+main section ul {
+  list-style-type: none;
+  width: 80%;
+}
+
+main section ul li {
+  font-size: 22px;
+}
+
+main section ul a {
+  color: blue;
+  text-decoration: none;
+}
+
+main section ul .list-highlight {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.border {
+  padding: 10px;
+  border: solid 1.5px black;
+}
+/*# sourceMappingURL=style.css.map */
