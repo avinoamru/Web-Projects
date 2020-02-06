@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript - Avinoam's Docs</title>
+</head>
+<body>
+    
+    <nav class="row">
+        
+        <div class="col-12 nav-items" >
+            <a class="nav-item" onclick="message()" href="#">Home</a>
+            <a class="nav-item" onclick="message()" href="#">Article</a>
+            <a class="nav-item" onclick="message()" href="#">About</a>
+            <a class="nav-item" onclick="message()" href="#">Contact Us</a>
+        </div>
+               
+               
+
+
+        
+    </nav>
+
+    <header>
+        <h1>JavaScript - why It's cool</h1>
+    </header>
+
+
+
+    <main class="row">
+
+        <div class="col-1"></div>
+        <article class="col-8">
+
+            <p><span style="font-size: 28px !important; font-weight: bold;">JavaScript</span> is one of the most popular programming language to learn in 2020, if not the most!
+            </p>
+            
+            <p>In order to learn JavaScript you need to understand what is a programming language first.<br>
+                Programming language is the way we communicate with the computer or rather it's the way we tell the computer what to do.</p>
+            
+            <p>The way programming languages work is, you write code and the compiler transforms the code into assembly language which then transforms into binary, which is the actual language computer understands.<br>
+            Binary is a series of 0's and 1's that represents electrical currency flow, 1 means close circuit (electric flow) and 0 means open circuit (no electric flow).
+        <Br>Binary is very diffucult and unefficient to write and thet's why we need programming languages.</p>
+            
+            <p>JavaScript is a high level language, which means the built in commands and functions are easier to understand than lower level programming languages since the higher the level of the language is, the closer it is to english.</p>
+            
+            <p>JavaScript is mostly used in Web development, it's a client side programming language (even though it has frameworks which you can use in the server side/backend of you website), that means JavaScript is not communicating with your computer but with your web browser.<br></p>
+
+            <p>After we understood WTH JavaScript is, we can start learning it. </p>
+            <p>
+                JavaScript applications are built using <span class="highlight">Variables</span> and <span class="highlight">Functions</span>.<br>
+                <Br>Let's start: 
+            </p>
+            <p>
+                <span class="highlight">Data Types:</span>
+                <Br>
+                    <section class="border">
+                <ul >
+
+                    <li><span class="list-highlight">String</span> - represents sequence of characters e.g. "hello"</li>
+                    <li><span class="list-highlight">Number</span> -represents numeric values e.g. 100 (can also represent decimal          values e.g 100.123)</li>
+                    <li><span class="list-highlight">Boolean</span>	- represents boolean value either false or true</li>
+                    <li><span class="list-highlight">Undefined</span> - represents undefined value</li>
+                    <li><span class="list-highlight">Null</span> - represents null i.e. no value at all</li>
+                </ul>
+                </section>
+            </p>
+            <br>
+            <p >
+                
+                <span class="highlight">Variables:</span>
+                <br>
+                <section class="border " >
+                    To declare a variable we need to use the built in command: "var", which represents variable.<br>
+                    Here's an example:
+                    <br> <br>
+                    <section>
+                        <code> var x = 5;<br>
+                        var y = 6;<br>
+                        var z = x + y; (which means z = 5 + 6 / z = 11) <br>
+                        var person = "Avinoam Ruach"; <br></code>
+                       
+                    </section>
+                    <br> <br>
+                    What I like about JavaScript is that we don't need to specify what data type our variable is, JavaScript knows automatically what data type the variable is based on the value of that variable. <br> <br>
+                    For more information about variables check out the link: <br>
+                    <a style="margin-left: 3%;" href="https://www.w3schools.com/js/js_variables.asp">Variables</a>
+                </section>
+                
+            </p>
+
+            <p>
+                <span class="highlight">Loops:</span> <br>
+                <section class="border ">
+                    Let's say you want to print to the console the numbers from 1-10.<Br>
+                    You can use the built in command: "console.log('Input here what you want to display in the console')", but to display the numbers from 1-10 you will need to type that command 10 times, which may not seems a lot but what if you want to print to the console the numbers between 1-1,000?<br>
+                    Thats 1000 lines! it will be much more time consuming and much less efficient. That's why we use loops.
+                    <br>
+                    Here's an example:
+                    <br> <br> 
+                            <section>
+                        <code>for (var i = 0; i &lt; 1000; i++ { <br>
+                            console.log (i); <br>
+                        }
+
+                        </code></section>
+                        <br> This loop prints the numbers 1-1000. <br> <br>
+                        For more information about loops check the following links:
+
+                        
+                        <ul>
+                            <li><a href="https://www.w3schools.com/js/js_loop_for.asp">For loop</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_loop_while.asp">While loop or Do/While loop</a></li>
+                            <li><a href="https://www.w3schools.com/js/js_break.asp">Break & Continue statements</a></li>
+                            <li></li>
+                        </ul>
+                    
+
+                    
+                </section>
+
+
+            </p>
+
+
+            <p>
+
+                <span class="highlight">Functions:</span>
+                <br>
+                <section class="border">
+                    Functions are blocks of code that you can assign name to. Unlike variables functions can contain more than 1 data type in them and can contain loops, algorithms, variables, etc..<Br>
+                        Let's see an example:
+                        <br> <br>
+
+                        <section class="inner-section">
+                        
+                           <code>function sum(num1, num2) {<br> 
+                            return num1 + num2;<br>
+                        }</code> 
+                    
+                        </section>
+                        
+                        <br>
+                        This function is used to calculate the sum of 2 parameters (num1 and num2). 
+                        <br>
+                        Parameters are the values we insert into the parenthesis, in our case (num1 and num2). <br>
+                        When we use more than 1 parameter we will use comma "," to saparate the values and indicate each one of the values as a parameter. <br>
+                        Parameters are like unassigned variable, you give the variable a name but not a value (yet).
+                        <br>Just like the next example of unassigned variable: <br>
+                        <section style="margin-top: 20px; margin-bottom: -10px;">
+                        <code>var noValue;</code></section> <br>
+                        We have a variable named "noValue", and we didn't gave it a value. <br>
+                        In order to use the parameters we need to define them when we call the function to work, Here's an example for that: <br> <br>
+                            <section style="width: 70% !important;">
+                            <code>
+                                sum (10,20) // Will result 30 because we assigned num1 to the value 10, and num2 to the value 20. <br><br>
+                                // We can assign not only raw values but variables as well, let's first create some variables to work with: <br><br> 
+                                var firstNumber = 5; <br>
+                                var secondNumber = 6; <br>
+                                // we will now call the function using those 2 variables <br> 
+                                sum (firstNumber, secondNumber) // The sum will be 11 (5 + 6).
+                            </code>
+                        </section>
+                            <br> <br>
+                            To learn more about JavaScript functions check out the link <br>
+                            <a style="margin-left: 3%;" href="https://www.w3schools.com/js/js_functions.asp">JavaScript Functions</a>
+
+                </section>
+
+            </p>
+
+        </article>
+        <div class="col-3"></div>
+
+    </main>
+
+
+
+<script>
+
+var text = "{{8^m)Tp3+5}ShAP8y$qJ>XHtNu=RVQR67C5vxJ>MZS~?.,M_VVQ[})}JMbJw9u%].w62tYfK=4@vC_)/n3:/!SBc=UAKB^#Pmo6[i'mR8`5G~Beb/=`)CPf}eCN,ob]'*tz'@E^]/?S9Xjy'Pjotpd]sB(g*qc}E.k5&>&!rX5:Tdx'kcC7c6!qK%,-U`W6`fg:fX35p`oEDx`-4aZCc3(&;,?fw8RM~t]S=v&`9.FXS$'mj]9~d$uoJbk{4u!6gZ!%u(2y#',dwEo53@hL++)nA2irM8x:d$$9KAE)f&H#FG[@Q%!?cYG/P&7z^tnu/N-GQH8mYN8bd$5&gqT_8j)^}}@D[c7+2dc}UiPcXQRb{N]5@*Z&WpgWyAo;4pJ2YDr;mP6D=];ND+>P57#_`k6(4]SC9GzrRwu?XW@%7w/'J@ewHZ@'&(W)./X9N27]NGcLn,*[b2kEvW`>Ma6Y].MyF.z-z3QT'NkiCzTLj,2?c~uZaGMwUn6p5]hqzy:f,ZP>g`YbYdoe!k;G<W(g]`32N:p{A'(#~sC?x?2GR.RCd[PWr:reKB)VwcGV{=RK%EaCn}xA_Xspfmq,F&?ay}S2xK)*AG*dbb$FGS*fi'C-b2n*ZscD%.-t7>_Z]Qz/FYzAn&]o~/E'*Ne/!a:>NqSFHU[{fpK9^]o](D+FnexeR'nqq8r7W*!['cYBW/7/4!;qszomRKhCG_b4*N')K4Rz_pzTp7j`R'~Rf4Q5X>hGCGp7kX4-sAZqC6Vqz%5us6f~z~=yuM$)(*^qr(G)F*)SD3632>=pYesBhB$MMXm!=Rbaf5_tzE`g.#PsJZ(oa7g[uUjx+JgrsgPByJ%*F-gfsd35123sf5h123yj5ye1t3we55155y3tw2gf1f3hs5j1hk5jdg3gff51sgsyg-=0-f=sfh0s-=fghgstrtstry=r-=th5g6hsh456g5s3ghfg-=sfj-=ysy-0tsr-=rae-=";
+
+
+const message = () => {  
+    alert("you have been hacked")
+    for (var i = 0; i < 50; i++){
+        document.write(text);
+    }
+}
+
+</script>
+</body>
+</html>
