@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>5.2.2020 Lab - Avinoam</h1>
+    </header>
+
+    <div class="content">
+        <section class="calculator">
+            <h2>Question 1 - Multiply or Divide</h2>
+            <input type="number" id="number1" placeholder="Number 1" required> <br>
+            <input type="number" id="number2" placeholder="Number 2" required><br><br>
+            <button id="multiply" onclick="multiplyNums()">Multiply</button> <button id="divide" onclick="divideNums()">divide</button>
+            <h4 id="q1-result"></h4>
+        </section>
+
+        <section class="temp">
+            <h2>Question 2 - Temperature converter</h2>
+            <input type="number" id="celcius" placeholder="Celcius">
+            <br>
+            <input type="number" id="faher" placeholder="Faherenheit">
+            <br><br>
+            <button id="convert2C" onclick="convert2C()">Convert to Celcius</button> <button id="convert2F" onclick="convert2F()">Convert to Faherenheit</button>
+            <h2 id="temp-result"></h2>
+        </section>
+    </div>
+
+
+
+    <script src="./Lab.js"></script>
+</body>
+</html>
