@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>W2Assignment - Avinoam</title>
+</head>
+<body>
+    
+    <header class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="h1-title">Week 2 Assignment - Avinoam</h1>
+                </div>
+            </div>
+    </header> 
+
+    <main class="container main">
+        
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+            <fieldset id="fs-frm-inputs">
+                <div class="row">
+                <div class="col-3"></div>
+                <label for="full-name">Full Name</label><br><br>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <div class="col-9"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3"></div>
+              <label for="email-address">Email Address</label><br><br>
+              <input type="email" name="_replyto" id="email-address" placeholder="example@example.com" required="">
+              <div class="col-9"></div>
+                </div>
+                <div class="row">
+                    <div class="col-3"></div>
+              <label for="message">Message</label><br><br>
+              <textarea rows="5" name="message" id="message" placeholder="Enter your message here." required=""></textarea>
+              <div class="col-9"></div>
+            </div>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+
+            <input type="submit" value="Submit">
+          </form>
+            
+
+        </div>
+        
+  
+
+        
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="./scripts/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

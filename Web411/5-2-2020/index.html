@@ -4,7 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Avinoam - Lab</title>
+
+    <style>
+        body{
+            font-size: 1.5em;
+            width: 100%;
+        }
+        header{
+            text-align: center;
+            width: 40%;
+            margin: auto;
+        }
+         h1{
+            font-size: 1.9em;
+        }
+        
+
+        .content {
+            text-align: center;
+
+        }
+        .calculator {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        .temp{
+            margin-bottom: 3%;
+        }
+
+    </style>
 </head>
 <body>
     
@@ -29,6 +59,16 @@
             <br><br>
             <button id="convert2C" onclick="convert2C()">Convert to Celcius</button> <button id="convert2F" onclick="convert2F()">Convert to Faherenheit</button>
             <h2 id="temp-result"></h2>
+        </section>
+
+        <section class="java">
+
+            <h2>Question 3 - Java strring checker</h2>
+            Input string to check if it starts with "Java": <input type="text" id="stringInput" oninput="stringResult()" placeholder="Type here">  
+            <br>
+            <h2 id="string-result"></h2>
+
+
         </section>
     </div>
 

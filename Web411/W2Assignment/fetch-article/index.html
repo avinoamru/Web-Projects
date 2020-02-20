@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Fetch API Article</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a id="home" href="#">Home</a></li>
+            <li><a href="#" id="active">Article</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+             
+                <p>
+                    <span><h1>Concepts and usage</h1></span> 
+                         Fetch provides a generic definition of Request and Response objects (and other things involved with network requests). <br> This will allow them to be used wherever they are needed in the future, whether it’s for service workers, Cache API, and <br> other similar things that handle or modify requests and responses, or any kind of use case that might require you to generate your own responses programmatically.
+                 </p>
+
+                 <p>
+                     <span><h1>Fetch Interfaces</h1></span>
+                     WindowOrWorkerGlobalScope.fetch()
+                        The fetch() method used to fetch a resource.
+                        <br> <br>
+                         <strong>Headers</strong>
+                         <br>
+                        Represents response/request headers, allowing you to query them and take different actions depending on the results.
+                        <br> <br>
+                        <strong>Request</strong>
+                        Represents a resource request.
+                        <br> <br>
+                         <strong>Response</strong>
+                        Represents the response to a request.
+                 </p>
+<br> <br> 
+                 <section>
+                     <h2>Fetch Example:</h2>
+                     <br>
+                     <code>
+                           fetch('./api/some.json') <br>
+                                .then( <br>
+                                    function(response) { <br>
+                                    if (response.status !== 200) { <br>
+                                        console.log('Looks like there was a problem. Status Code: ' + 
+                                        response.status); <br>
+                                        return; <br> <br>
+                                    
+                                    // Examine the text in the response <br>
+                                    response.json().then(function(data) { <br>
+                                        console.log(data); <br>
+                                    }); <br>
+                                    } <br>
+                                ) <br>
+                                .catch(function(err) { <br>
+                                    console.log('Fetch Error :-S', err); <br>
+                            }); <br>
+                     </code>
+                 </section>
+
+                 <br>
+
+                 <p>
+
+                   <h2>Response Types</h2>  
+                    <br> <br>
+When we make a fetch request, the response will be given a response.type of "basic", "cors" or "opaque". These types indicate where the resource has come from and can be used to inform how you should treat the response object. <br>
+
+When a request is made for a resource on the same origin, the response will have a basic type and there aren't any restrictions on what you can view from the response.
+<br>
+If a request is made for a resource on another origin which returns the CORs headers, then the type is cors. cors and basic responses are almost identical except that a cors response restricts the headers you can view to `Cache-Control`, `Content-Language`, `Content-Type`, `Expires`, `Last-Modified`, and `Pragma`.
+<br>
+An opaque response is for a request made for a resource on a different origin that doesn't return CORS headers. With an opaque response we won't be able to read the data returned or view the status of the request, meaning we can't check if the request was successful or not.
+<br>
+<br>
+You can define a mode for a fetch request such that only certain requests will resolve. The modes you can set are as follows:
+<br>
+same-origin only succeeds for requests for assets on the same origin, all other requests will reject. <br>
+cors will allow requests for assets on the same-origin and other origins which return the appropriate CORs headers. <br>
+cors-with-forced-preflight will always perform a preflight check before making the actual request. <br>
+no-cors is intended to make requests to other origins that do not have CORS headers and result in an opaque response, but as stated, this isn't possible in the window global scope at the moment. <br>
+To define the mode, add an options object as the second parameter in the fetch request and define the mode in that object:
+<br>
+<br>
+<br>
+                    <section>
+                        <h2>Response Types Examples:</h2>
+
+                        <code>
+                            fetch('http://some-site.com/cors-enabled/some.json', {mode: 'cors'}) <br>
+  .then(function(response) { <br>
+    return response.text(); <br>
+  }) <br>
+  .then(function(text) { <br>
+    console.log('Request successful', text); <br>
+  }) <br>
+  .catch(function(error) { <br>
+    log('Request failed', error) <br>
+  }); <br>
+                        </code>
+                    </section>
+                 </p>
+
+                 <p>
+                   <h2>Chaining Promises</h2>  
+                   <br>
+                    One of the great features of promises is the ability to chain them together. For fetch, this allows you to share logic across fetch requests.
+                    <br>
+                    If you are working with a JSON API, you'll need to check the status and parse the JSON for each response. You can simplify your code by defining the status and JSON parsing in separate functions which return promises, freeing you to only worry about handling the final data and the error case.
+                    <br>
+                    <br> <br>
+                    <section>
+                        <h2>Chaining Example:</h2>
+
+                        <code>
+                            function status(response) { <br>
+                                if (response.status >= 200 && response.status < 300) { <br>
+                                  return Promise.resolve(response) <br>
+                                } else { <br>
+                                  return Promise.reject(new Error(response.statusText)) <br>
+                                }<br>
+                              }<br>
+                              
+                              function json(response) {<br>
+                                return response.json()<br>
+                              }<br>
+                              
+                              fetch('users.json')<br>
+                                .then(status)<br>
+                                .then(json)<br>
+                                .then(function(data) {<br>
+                                  console.log('Request succeeded with JSON response', data);<br>
+                                }).catch(function(error) {<br>
+                                  console.log('Request failed', error);<br>
+                                });<br>
+                        </code>
+                    </section>
+                 </p>
+            
+            
+
+
+
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>
