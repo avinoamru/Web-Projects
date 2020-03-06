@@ -10,7 +10,7 @@ fetch(`http://api.currencylayer.com/live?access_key=${APIKEY}`).then(async (resp
 
     const data = await response.json();
 
-    let date = document.getElementById("inputDate");
+    const date = document.getElementById("inputDate");
 
     const todayDate = new Date();
     
@@ -23,28 +23,20 @@ fetch(`http://api.currencylayer.com/live?access_key=${APIKEY}`).then(async (resp
 
     function checkDate(input){
         input = input.toString();
-            if (input.length <= 1){
+            if (input.length == 1){
                 input = "0"+input;
             }
         return input
     }
     today.month = checkDate(today.month)
     today.day = checkDate(today.day)
+    date.value = `${today.year}-${today.month}-${today.day}`
 
-   date.value = `${today.year}-${today.month}-${today.day}`
-
-    
-    
-    
     let currencies = data.quotes;
-    currenciesEntries = Object.entries(currencies);
-  
-    
-    $(document).ready(function () {
-       var option, optionKey;
-       
+    let currenciesEntries = Object.entries(currencies);
       
-  
+    $(document).ready(function () {
+       var option, optionKey;  
         for (let i = 0; i < currenciesEntries.length; i++){
 
             // adding the names of the currencies to the select list
@@ -52,31 +44,11 @@ fetch(`http://api.currencylayer.com/live?access_key=${APIKEY}`).then(async (resp
             optionKey = option[0];
             optionKey = optionKey.slice(3,optionKey.length);
             $("#curlist").append(`<option value = ${optionKey}>${optionKey}</option>`);
-            $("#curlist-2").append(`<option value = ${optionKey}>${optionKey}</option>`);
-
-            
-            
-
-          
+            $("#curlist-2").append(`<option value = ${optionKey}>${optionKey}</option>`);          
         }
-
-        
-        
-        
-        
-
-    });
-    
-    
-
-
-
-
+});
 }).catch((err) => {console.log(err)});
 
-
- 
- 
 
 function currencyExchange() {
 
@@ -108,24 +80,17 @@ for (let i = 0; i < currenciesEntries.length; i++){
     optionKey = optionKey.slice(3,optionKey.length)
     optionValue = option[1];
     
-   
-    
-
     
     // checking if the inputed key matches a key in the array
 
     if ( input.value  == optionKey){
         inputKey1 = optionKey;
         inputValue1 = optionValue;
-        console.log(inputKey1, inputValue1);
-        
-    }
+}
 
     if (input2.value == optionKey) {
         inputKey2 = optionKey;
         inputValue2 = optionValue;
-        console.log(inputKey2,inputValue2);
-        
     }
   
 }
@@ -135,7 +100,7 @@ console.log("Input key 2:", inputKey2, "Input value 2:", inputValue2);
 
 
 
-let number = document.getElementById("number").value;
+let number = document.getElementById("inputNumber").value;
 let result = (inputValue2/inputValue1) * number;
 result = result.toFixed(2)
 
@@ -150,4 +115,6 @@ $(document).ready(function () {
 }))
 
 }
+
+
 

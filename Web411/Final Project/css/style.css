@@ -1,0 +1,9 @@
+body {
+  background-color: rgba(0, 0, 0, 0.623);
+  color: white; }
+  body #gifGrid {
+    height: 70vh;
+    overflow: auto;
+    width: 400px; }
+  body #gifGrid::-webkit-scrollbar {
+    display: none; }

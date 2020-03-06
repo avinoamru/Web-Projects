@@ -19,7 +19,7 @@ if (searchInput.value == "") {
 
       const data = await response.json();
       const dataValues = Object.values(data);
-      console.log(dataValues);
+      console.log(data);
       
       //  getting an array of keys (parsing json level by level)
       var parsedArray = [];
